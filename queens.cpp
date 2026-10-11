@@ -88,8 +88,7 @@ int pickConflictedQueen() {
     return bad[pick(rng)];
 }
 
-// Шаг 2: посчитать, сколько конфликтов будет у ферзя в каждой строке
-// столбца col
+// Шаг 2: посчитать, сколько конфликтов будет у ферзя в каждой строке столбца col
 std::vector<int> scoreRows(int col) {
     std::vector<int> score(N, 0);
     int saved = queen[col];
@@ -149,10 +148,7 @@ void makeOneStep() {
     lastStep.score = score;
 }
 
-// ============================================================
-//  ЧАСТЬ 4. ГРАФИКА
-// ============================================================
-
+//  ГРАФИКА
 // Нарисовать ферзя
 void drawQueen(sf::RenderWindow& window, float cx, float cy, float s, sf::Color col) {
     // тело
