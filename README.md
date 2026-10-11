@@ -1,5 +1,14 @@
 # algoritms-c-plus-plus
 
+Комманда для запуска(queens нужно заменить 3 раза на свой проект)
+
+g++ -std=c++17 queens.cpp -o queens \          
+  -I/opt/homebrew/opt/sfml@2/include \
+  -L/opt/homebrew/opt/sfml@2/lib \
+  -lsfml-graphics -lsfml-window -lsfml-system \
+  -Wl,-rpath,/opt/homebrew/opt/sfml@2/lib
+./queens 
+
 Monte-carlo
 <img width="893" height="923" alt="Screenshot 2026-10-11 at 18 44 21" src="https://github.com/user-attachments/assets/348e3a21-e989-4af9-abd0-6f5b3f3867c7" />
 
